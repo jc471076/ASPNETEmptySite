@@ -1,0 +1,715 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{740BF662-CF57-40DF-87DF-FE353BA2304A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NextGenSoft</RootNamespace>
+    <AssemblyName>NextGenSoft</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\images\app1.jpg" />
+    <Content Include="assets\images\app2.jpg" />
+    <Content Include="assets\images\blockchain-technology-1024x986.png" />
+    <Content Include="assets\images\digital-innovation-1024x390.jpg" />
+    <Content Include="assets\images\digital1.jpg" />
+    <Content Include="assets\images\frank-gencorelli.jpg" />
+    <Content Include="assets\images\SCADA-Cyber-Security-717x1024.jpg" />
+    <Content Include="assets\images\security1.png" />
+    <Content Include="assets\images\soft1.jpg" />
+    <Content Include="assets\images\soft2.jpg" />
+    <Content Include="assets\images\web1.png" />
+    <Content Include="assets\images\Website1.png" />
+    <Content Include="assets\images\Website2.png" />
+    <Content Include="assets\images\Website3.jpg" />
+    <Content Include="packages.config" />
+    <Content Include="Site1.Master" />
+    <Content Include="assets\fonts\fontawesome-webfont3e6e.eot" />
+    <Content Include="assets\fonts\fontawesome-webfont3e6e.svg" />
+    <Content Include="assets\fonts\fontawesome-webfont3e6e.ttf" />
+    <Content Include="assets\fonts\fontawesome-webfont3e6e.woff" />
+    <Content Include="assets\fonts\fontawesome-webfont3e6e.woff2" />
+    <Content Include="assets\fonts\fontawesome-webfontd41d.eot" />
+    <Content Include="assets\fonts\themify9f24.eot" />
+    <Content Include="assets\fonts\themify9f24.svg" />
+    <Content Include="assets\fonts\themify9f24.ttf" />
+    <Content Include="assets\fonts\themify9f24.woff" />
+    <Content Include="assets\fonts\themifyd41d.eot" />
+    <Content Include="assets\images\app-showcase\ic_filter_drama_24px.svg" />
+    <Content Include="assets\images\app-showcase\ic_free_breakfast_24px.svg" />
+    <Content Include="assets\images\app-showcase\ic_lightbulb_outline_24px.svg" />
+    <Content Include="assets\images\app-showcase\ic_supervisor_account_24px.svg" />
+    <Content Include="assets\images\app-showcase\ic_tag_faces_24px.svg" />
+    <Content Include="assets\images\app-showcase\ic_trending_up_24px.svg" />
+    <Content Include="assets\images\dobule-exposure\ic_arrow_forward_36px.svg" />
+    <Content Include="assets\images\parallax-joy\ic_arrow_downward_24px.svg" />
+    <Content Include="assets\images\whiteboard\assets\busy-icons-svg\arrow-right.svg" />
+    <Content Include="assets\images\whiteboard\assets\busy-icons-svg\award5.svg" />
+    <Content Include="assets\images\whiteboard\assets\busy-icons-svg\character07.svg" />
+    <Content Include="assets\images\whiteboard\assets\busy-icons-svg\chart02.svg" />
+    <Content Include="assets\images\whiteboard\assets\busy-icons-svg\file05.svg" />
+    <Content Include="assets\images\whiteboard\assets\busy-icons-svg\gauge.svg" />
+    <Content Include="assets\images\whiteboard\assets\busy-icons-svg\head-check.svg" />
+    <Content Include="assets\images\whiteboard\assets\busy-icons-svg\head-idea.svg" />
+    <Content Include="assets\images\whiteboard\assets\busy-icons-svg\monitor.svg" />
+    <Content Include="assets\images\whiteboard\assets\busy-icons-svg\pencil.svg" />
+    <Content Include="assets\images\whiteboard\assets\busy-icons-svg\preson-megaphone.svg" />
+    <Content Include="assets\images\whiteboard\assets\busy-icons-svg\user05.svg" />
+    <Content Include="assets\images\whiteboard\ic_done_24px.svg" />
+    <Content Include="assets\stylesheets\revolution\revicons\revicons90c6.eot" />
+    <Content Include="assets\stylesheets\revolution\revicons\revicons90c6.svg" />
+    <Content Include="assets\stylesheets\revolution\revicons\revicons90c6.ttf" />
+    <Content Include="assets\stylesheets\revolution\revicons\revicons90c6.woff" />
+    <None Include="Properties\PublishProfiles\NextGenSoft.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\fonts\glyphicons-halflings-regular-2.html" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular-3.html" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular-4.html" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular-5.html" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.html" />
+    <Content Include="assets\fonts\glyphicons-halflings-regulard41d.html" />
+    <Content Include="assets\images\app-showcase\object_iphone_1.png" />
+    <Content Include="assets\images\app-showcase\phonescreen.jpg" />
+    <Content Include="assets\images\app-showcase\phonescreen1.jpg" />
+    <Content Include="assets\images\app-showcase\phonescreen2-2.jpg" />
+    <Content Include="assets\images\app-showcase\phonescreen3.jpg" />
+    <Content Include="assets\images\app-showcase\phonescreen4.jpg" />
+    <Content Include="assets\images\app-showcase\phonescreen5.jpg" />
+    <Content Include="assets\images\app-showcase\phonescreen6.jpg" />
+    <Content Include="assets\images\app-showcase\transparent.png" />
+    <Content Include="assets\images\blur-effect\arrow2x.png" />
+    <Content Include="assets\images\blur-effect\blurbg10.jpg" />
+    <Content Include="assets\images\blur-effect\blurbg13.jpg" />
+    <Content Include="assets\images\blur-effect\blurbg14.jpg" />
+    <Content Include="assets\images\dobule-exposure\bw.jpg" />
+    <Content Include="assets\images\dobule-exposure\galaxy.jpg" />
+    <Content Include="assets\images\dobule-exposure\galaxy_3-2.jpg" />
+    <Content Include="assets\images\dobule-exposure\manbw.jpg" />
+    <Content Include="assets\images\dobule-exposure\mountain4.jpg" />
+    <Content Include="assets\images\dobule-exposure\portait2.jpg" />
+    <Content Include="assets\images\drpdwn-bg.jpg" />
+    <Content Include="assets\images\fb-icn.png" />
+    <Content Include="assets\images\gl-icn.png" />
+    <Content Include="assets\images\gravity-effect\flake1.png" />
+    <Content Include="assets\images\gravity-effect\flake2.png" />
+    <Content Include="assets\images\gravity-effect\flake3.png" />
+    <Content Include="assets\images\gravity-effect\flake4.png" />
+    <Content Include="assets\images\gravity-effect\flake5.png" />
+    <Content Include="assets\images\gravity-effect\galaxy_bg-1.png" />
+    <Content Include="assets\images\gravity-effect\gravity_astronaut.png" />
+    <Content Include="assets\images\gravity-effect\gravity_bg.jpg" />
+    <Content Include="assets\images\gravity-effect\transparent.png" />
+    <Content Include="assets\images\hndl-feat-bg.jpg" />
+    <Content Include="assets\images\lgo1-drk.png" />
+    <Content Include="assets\images\lgo1-lgt.png" />
+    <Content Include="assets\images\lgo2-lgt.png" />
+    <Content Include="assets\images\lgo3-lgt.png" />
+    <Content Include="assets\images\mask-showcase\birds.jpg" />
+    <Content Include="assets\images\mask-showcase\blume.jpg" />
+    <Content Include="assets\images\mask-showcase\krokodil.jpg" />
+    <Content Include="assets\images\mask-showcase\waves.jpg" />
+    <Content Include="assets\images\mgamnu-bg.png" />
+    <Content Include="assets\images\parallax-joy\OBJ_eraser.png" />
+    <Content Include="assets\images\parallax-joy\OBJ_glasses.png" />
+    <Content Include="assets\images\parallax-joy\OBJ_headphones.png" />
+    <Content Include="assets\images\parallax-joy\OBJ_mouse.png" />
+    <Content Include="assets\images\parallax-joy\OBJ_pen.png" />
+    <Content Include="assets\images\parallax-joy\OBJ_phone.png" />
+    <Content Include="assets\images\parallax-joy\OBJ_triangle.png" />
+    <Content Include="assets\images\parallax-joy\OBJ_triangle_s.png" />
+    <Content Include="assets\images\parallax-joy\OBJ_watch.png" />
+    <Content Include="assets\images\parallax-joy\transparent.html" />
+    <Content Include="assets\images\parlx10.jpg" />
+    <Content Include="assets\images\parlx11.jpg" />
+    <Content Include="assets\images\parlx12.png" />
+    <Content Include="assets\images\parlx13.jpg" />
+    <Content Include="assets\images\parlx14.jpg" />
+    <Content Include="assets\images\parlx15.jpg" />
+    <Content Include="assets\images\parlx17.jpg" />
+    <Content Include="assets\images\parlx17.png" />
+    <Content Include="assets\images\parlx2.jpg" />
+    <Content Include="assets\images\parlx3.jpg" />
+    <Content Include="assets\images\parlx4.jpg" />
+    <Content Include="assets\images\parlx4.png" />
+    <Content Include="assets\images\parlx5.jpg" />
+    <Content Include="assets\images\parlx6.jpg" />
+    <Content Include="assets\images\parlx7.jpg" />
+    <Content Include="assets\images\parlx9.jpg" />
+    <Content Include="assets\images\pg-tp-bg.jpg" />
+    <Content Include="assets\images\pg-tp-bg10.jpg" />
+    <Content Include="assets\images\pg-tp-bg2.jpg" />
+    <Content Include="assets\images\pg-tp-bg3.jpg" />
+    <Content Include="assets\images\pg-tp-bg4.jpg" />
+    <Content Include="assets\images\pg-tp-bg5.jpg" />
+    <Content Include="assets\images\pg-tp-bg6.jpg" />
+    <Content Include="assets\images\pg-tp-bg7.jpg" />
+    <Content Include="assets\images\pg-tp-bg8.jpg" />
+    <Content Include="assets\images\pg-tp-bg9.jpg" />
+    <Content Include="assets\images\resources\abt-img1.jpg" />
+    <Content Include="assets\images\resources\abt-img2.jpg" />
+    <Content Include="assets\images\resources\ad.jpg" />
+    <Content Include="assets\images\resources\ad2.jpg" />
+    <Content Include="assets\images\resources\ad3.jpg" />
+    <Content Include="assets\images\resources\ad4.jpg" />
+    <Content Include="assets\images\resources\aprch-img.jpg" />
+    <Content Include="assets\images\resources\blg-dtl-athr-img1.jpg" />
+    <Content Include="assets\images\resources\blg-dtl-img1.jpg" />
+    <Content Include="assets\images\resources\blg-dtl-img2.jpg" />
+    <Content Include="assets\images\resources\blg-lst-img1.jpg" />
+    <Content Include="assets\images\resources\blg-lst-img2.jpg" />
+    <Content Include="assets\images\resources\blg-lst-img3.jpg" />
+    <Content Include="assets\images\resources\blg-lst-img4.jpg" />
+    <Content Include="assets\images\resources\brnch-img1.jpg" />
+    <Content Include="assets\images\resources\brnch-img10.jpg" />
+    <Content Include="assets\images\resources\brnch-img2.jpg" />
+    <Content Include="assets\images\resources\brnch-img3.jpg" />
+    <Content Include="assets\images\resources\brnch-img4.jpg" />
+    <Content Include="assets\images\resources\brnch-img5.jpg" />
+    <Content Include="assets\images\resources\brnch-img6.jpg" />
+    <Content Include="assets\images\resources\brnch-img7.jpg" />
+    <Content Include="assets\images\resources\brnch-img8.jpg" />
+    <Content Include="assets\images\resources\brnch-img9.jpg" />
+    <Content Include="assets\images\resources\carers-img.jpg" />
+    <Content Include="assets\images\resources\cmp-img.png" />
+    <Content Include="assets\images\resources\cmp-msn-img.jpg" />
+    <Content Include="assets\images\resources\cmt-img1-1.jpg" />
+    <Content Include="assets\images\resources\cmt-img1-2.jpg" />
+    <Content Include="assets\images\resources\cmt-img1-3.jpg" />
+    <Content Include="assets\images\resources\cmt-img1-4.jpg" />
+    <Content Include="assets\images\resources\cmt-img2-1.jpg" />
+    <Content Include="assets\images\resources\cmt-img2-2.jpg" />
+    <Content Include="assets\images\resources\cnsdr-tb-img1.jpg" />
+    <Content Include="assets\images\resources\cnsdr-tb-img2.jpg" />
+    <Content Include="assets\images\resources\cnsdr-tb-img3.jpg" />
+    <Content Include="assets\images\resources\cnsdr-tb-img4.jpg" />
+    <Content Include="assets\images\resources\cnslt-mckp.png" />
+    <Content Include="assets\images\resources\cnt-gal-img1-1.jpg" />
+    <Content Include="assets\images\resources\cnt-gal-img1-2.jpg" />
+    <Content Include="assets\images\resources\cnt-gal-img1-3.jpg" />
+    <Content Include="assets\images\resources\cnt-gal-img1-4.jpg" />
+    <Content Include="assets\images\resources\cnt-gal-img1-5.jpg" />
+    <Content Include="assets\images\resources\cnt-gal-img1-6.jpg" />
+    <Content Include="assets\images\resources\conslt-img1.jpg" />
+    <Content Include="assets\images\resources\conslt-img2.jpg" />
+    <Content Include="assets\images\resources\conslt-img3.jpg" />
+    <Content Include="assets\images\resources\conslt-img4.jpg" />
+    <Content Include="assets\images\resources\exp-icn1.png" />
+    <Content Include="assets\images\resources\exp-icn2.png" />
+    <Content Include="assets\images\resources\exp-icn3.png" />
+    <Content Include="assets\images\resources\exp-icn4.png" />
+    <Content Include="assets\images\resources\exp-icn5.png" />
+    <Content Include="assets\images\resources\ftr-gal-img1-1.jpg" />
+    <Content Include="assets\images\resources\ftr-gal-img1-2.jpg" />
+    <Content Include="assets\images\resources\ftr-gal-img1-3.jpg" />
+    <Content Include="assets\images\resources\g-ply-btn1.jpg" />
+    <Content Include="assets\images\resources\g-ply-btn2.jpg" />
+    <Content Include="assets\images\resources\grd-icn1.png" />
+    <Content Include="assets\images\resources\grd-icn2-1.png" />
+    <Content Include="assets\images\resources\grd-icn2-2.png" />
+    <Content Include="assets\images\resources\grd-icn2-3.png" />
+    <Content Include="assets\images\resources\grd-icn2.png" />
+    <Content Include="assets\images\resources\grd-icn3.png" />
+    <Content Include="assets\images\resources\grdton-mckp.png" />
+    <Content Include="assets\images\resources\hndl-mb1.png" />
+    <Content Include="assets\images\resources\hndl-mb2.png" />
+    <Content Include="assets\images\resources\hstry-athr1.jpg" />
+    <Content Include="assets\images\resources\hstry-athr2.jpg" />
+    <Content Include="assets\images\resources\hstry-athr3.jpg" />
+    <Content Include="assets\images\resources\hstry-athr4.jpg" />
+    <Content Include="assets\images\resources\hstry-feat-img1.jpg" />
+    <Content Include="assets\images\resources\hstry-feat-img2.jpg" />
+    <Content Include="assets\images\resources\hstry-img1-1.jpg" />
+    <Content Include="assets\images\resources\hstry-img1-2.jpg" />
+    <Content Include="assets\images\resources\hstry-img1-3.jpg" />
+    <Content Include="assets\images\resources\hstry-img2-1.jpg" />
+    <Content Include="assets\images\resources\hstry-img2-2.jpg" />
+    <Content Include="assets\images\resources\hstry-img2-3.jpg" />
+    <Content Include="assets\images\resources\hstry-img3-1.jpg" />
+    <Content Include="assets\images\resources\hstry-img3-2.jpg" />
+    <Content Include="assets\images\resources\hstry-img3-3.jpg" />
+    <Content Include="assets\images\resources\hstry-img4-1.jpg" />
+    <Content Include="assets\images\resources\hstry-img4-2.jpg" />
+    <Content Include="assets\images\resources\hstry-img4-3.jpg" />
+    <Content Include="assets\images\resources\inst-glry1.jpg" />
+    <Content Include="assets\images\resources\inst-glry2.jpg" />
+    <Content Include="assets\images\resources\inst-glry3.jpg" />
+    <Content Include="assets\images\resources\inst-glry4.jpg" />
+    <Content Include="assets\images\resources\inst-glry5.jpg" />
+    <Content Include="assets\images\resources\inst-glry6.jpg" />
+    <Content Include="assets\images\resources\inst-glry7.jpg" />
+    <Content Include="assets\images\resources\inst-glry8.jpg" />
+    <Content Include="assets\images\resources\mini-pst-img1.jpg" />
+    <Content Include="assets\images\resources\mini-pst-img2-1.jpg" />
+    <Content Include="assets\images\resources\mini-pst-img2-2.jpg" />
+    <Content Include="assets\images\resources\mini-pst-img2-3.jpg" />
+    <Content Include="assets\images\resources\mini-pst-img2.jpg" />
+    <Content Include="assets\images\resources\mini-pst-img3.jpg" />
+    <Content Include="assets\images\resources\mini-pst-img4.jpg" />
+    <Content Include="assets\images\resources\mini-pst-img5.jpg" />
+    <Content Include="assets\images\resources\mp-img.png" />
+    <Content Include="assets\images\resources\nws-img1.jpg" />
+    <Content Include="assets\images\resources\nws-img10.jpg" />
+    <Content Include="assets\images\resources\nws-img11.jpg" />
+    <Content Include="assets\images\resources\nws-img12.jpg" />
+    <Content Include="assets\images\resources\nws-img2-1.jpg" />
+    <Content Include="assets\images\resources\nws-img2-2.jpg" />
+    <Content Include="assets\images\resources\nws-img2-3.jpg" />
+    <Content Include="assets\images\resources\nws-img2-4.jpg" />
+    <Content Include="assets\images\resources\nws-img2-5.jpg" />
+    <Content Include="assets\images\resources\nws-img2-6.jpg" />
+    <Content Include="assets\images\resources\nws-img2.jpg" />
+    <Content Include="assets\images\resources\nws-img3.jpg" />
+    <Content Include="assets\images\resources\nws-img4.jpg" />
+    <Content Include="assets\images\resources\nws-img5.jpg" />
+    <Content Include="assets\images\resources\nws-img6.jpg" />
+    <Content Include="assets\images\resources\nws-img7.jpg" />
+    <Content Include="assets\images\resources\nws-img8.jpg" />
+    <Content Include="assets\images\resources\nws-img9.jpg" />
+    <Content Include="assets\images\resources\prft-img1-1.jpg" />
+    <Content Include="assets\images\resources\prft-img1-2.jpg" />
+    <Content Include="assets\images\resources\prft-img1-3.jpg" />
+    <Content Include="assets\images\resources\prj-img1.jpg" />
+    <Content Include="assets\images\resources\prj-img2.jpg" />
+    <Content Include="assets\images\resources\prj-img3.jpg" />
+    <Content Include="assets\images\resources\prj-img4.jpg" />
+    <Content Include="assets\images\resources\prj-tb1.jpg" />
+    <Content Include="assets\images\resources\prj-tb2.jpg" />
+    <Content Include="assets\images\resources\prj-tb3.jpg" />
+    <Content Include="assets\images\resources\prj-tb4.jpg" />
+    <Content Include="assets\images\resources\prmo-vdo-mckp.png" />
+    <Content Include="assets\images\resources\prmo-vdo.jpg" />
+    <Content Include="assets\images\resources\prtf-feat-img1.jpg" />
+    <Content Include="assets\images\resources\prtf-feat-img2.jpg" />
+    <Content Include="assets\images\resources\prtf-feat-img3.jpg" />
+    <Content Include="assets\images\resources\prtf-img5-1.jpg" />
+    <Content Include="assets\images\resources\prtf-img5-2.jpg" />
+    <Content Include="assets\images\resources\prtf-img5-3.jpg" />
+    <Content Include="assets\images\resources\prtf-img5-4.jpg" />
+    <Content Include="assets\images\resources\prtf-img5-5.jpg" />
+    <Content Include="assets\images\resources\prtf-img5-6.jpg" />
+    <Content Include="assets\images\resources\prtf-img6-1.jpg" />
+    <Content Include="assets\images\resources\prtf-img6-2.jpg" />
+    <Content Include="assets\images\resources\prtf-img6-3.jpg" />
+    <Content Include="assets\images\resources\prtf-img6-4.jpg" />
+    <Content Include="assets\images\resources\prtf-img6-5.jpg" />
+    <Content Include="assets\images\resources\prtf-img6-6.jpg" />
+    <Content Include="assets\images\resources\prtf-img6-7.jpg" />
+    <Content Include="assets\images\resources\prtf-img6-8.jpg" />
+    <Content Include="assets\images\resources\prtf-img6-9.jpg" />
+    <Content Include="assets\images\resources\prtf-img7-1.jpg" />
+    <Content Include="assets\images\resources\prtf-img7-2.jpg" />
+    <Content Include="assets\images\resources\prtf-img7-3.jpg" />
+    <Content Include="assets\images\resources\prtf-img7-4.jpg" />
+    <Content Include="assets\images\resources\prtf-img7-5.jpg" />
+    <Content Include="assets\images\resources\prtf-img7-6.jpg" />
+    <Content Include="assets\images\resources\prtf-img8-1.jpg" />
+    <Content Include="assets\images\resources\prtf-img8-2.jpg" />
+    <Content Include="assets\images\resources\prtf-img8-3.jpg" />
+    <Content Include="assets\images\resources\prtf-img8-4.jpg" />
+    <Content Include="assets\images\resources\prtf-img8-5.jpg" />
+    <Content Include="assets\images\resources\prtf-img8-6.jpg" />
+    <Content Include="assets\images\resources\prtf2-nav-img1.jpg" />
+    <Content Include="assets\images\resources\prtf2-nav-img2.jpg" />
+    <Content Include="assets\images\resources\prtf2-nav-img3.jpg" />
+    <Content Include="assets\images\resources\prtfl-bg-img1.jpg" />
+    <Content Include="assets\images\resources\prtfl-bg-img11.gif" />
+    <Content Include="assets\images\resources\prtflo-bg-img1-1.jpg" />
+    <Content Include="assets\images\resources\prtflo-bg-img1-2.jpg" />
+    <Content Include="assets\images\resources\prtflo-bg-img1-3.jpg" />
+    <Content Include="assets\images\resources\prtflo-bg-img2-1.jpg" />
+    <Content Include="assets\images\resources\prtflo-bg-img2-2.jpg" />
+    <Content Include="assets\images\resources\prtflo-img1-1.gif" />
+    <Content Include="assets\images\resources\prtflo-img1-2.gif" />
+    <Content Include="assets\images\resources\prtflo-img1-3.gif" />
+    <Content Include="assets\images\resources\prtflo-img1-4.jpg" />
+    <Content Include="assets\images\resources\prtflo-img1-5.jpg" />
+    <Content Include="assets\images\resources\prtflo-img1-6.jpg" />
+    <Content Include="assets\images\resources\prtflo-img2-1.jpg" />
+    <Content Include="assets\images\resources\prtflo-img2-2.jpg" />
+    <Content Include="assets\images\resources\prtflo-img2-3.jpg" />
+    <Content Include="assets\images\resources\prtflo-img2-4.jpg" />
+    <Content Include="assets\images\resources\prtflo-img2-5.jpg" />
+    <Content Include="assets\images\resources\prtflo-img2-6.jpg" />
+    <Content Include="assets\images\resources\prtflo-img2-7.jpg" />
+    <Content Include="assets\images\resources\prtflo-img2-8.jpg" />
+    <Content Include="assets\images\resources\prtflo-img2-9.jpg" />
+    <Content Include="assets\images\resources\prtflo-img3-1.jpg" />
+    <Content Include="assets\images\resources\prtflo-img3-2.jpg" />
+    <Content Include="assets\images\resources\prtflo-img3-3.jpg" />
+    <Content Include="assets\images\resources\prtflo-img3-4.jpg" />
+    <Content Include="assets\images\resources\prtflo-img3-5.jpg" />
+    <Content Include="assets\images\resources\prtflo-img3-6.jpg" />
+    <Content Include="assets\images\resources\prtflo-img3-7.jpg" />
+    <Content Include="assets\images\resources\prtflo-img3-8.jpg" />
+    <Content Include="assets\images\resources\prtflo-img4-1.gif" />
+    <Content Include="assets\images\resources\prtflo-img4-1.jpg" />
+    <Content Include="assets\images\resources\prtflo-img4-10.gif" />
+    <Content Include="assets\images\resources\prtflo-img4-10.jpg" />
+    <Content Include="assets\images\resources\prtflo-img4-2.gif" />
+    <Content Include="assets\images\resources\prtflo-img4-2.jpg" />
+    <Content Include="assets\images\resources\prtflo-img4-3.gif" />
+    <Content Include="assets\images\resources\prtflo-img4-3.jpg" />
+    <Content Include="assets\images\resources\prtflo-img4-4.gif" />
+    <Content Include="assets\images\resources\prtflo-img4-4.jpg" />
+    <Content Include="assets\images\resources\prtflo-img4-5.gif" />
+    <Content Include="assets\images\resources\prtflo-img4-5.jpg" />
+    <Content Include="assets\images\resources\prtflo-img4-6.gif" />
+    <Content Include="assets\images\resources\prtflo-img4-6.jpg" />
+    <Content Include="assets\images\resources\prtflo-img4-7.gif" />
+    <Content Include="assets\images\resources\prtflo-img4-7.jpg" />
+    <Content Include="assets\images\resources\prtflo-img4-8.gif" />
+    <Content Include="assets\images\resources\prtflo-img4-8.jpg" />
+    <Content Include="assets\images\resources\prtflo-img4-9.gif" />
+    <Content Include="assets\images\resources\prtflo-img4-9.jpg" />
+    <Content Include="assets\images\resources\prtflo-img5-1.jpg" />
+    <Content Include="assets\images\resources\prtflo-img5-2.jpg" />
+    <Content Include="assets\images\resources\prtflo-img5-3.jpg" />
+    <Content Include="assets\images\resources\prtflo-img5-4.jpg" />
+    <Content Include="assets\images\resources\prtflo-img5-5.jpg" />
+    <Content Include="assets\images\resources\prtflo-img5-6.jpg" />
+    <Content Include="assets\images\resources\prtflo-img5-7.jpg" />
+    <Content Include="assets\images\resources\prtflo-img5-8.jpg" />
+    <Content Include="assets\images\resources\prtflo-img5-9.jpg" />
+    <Content Include="assets\images\resources\prtflo-img6-1.gif" />
+    <Content Include="assets\images\resources\prtflo-img6-1.jpg" />
+    <Content Include="assets\images\resources\prtflo-img6-2.gif" />
+    <Content Include="assets\images\resources\prtflo-img6-2.jpg" />
+    <Content Include="assets\images\resources\prtflo-img6-3.jpg" />
+    <Content Include="assets\images\resources\prtflo-img6-4.jpg" />
+    <Content Include="assets\images\resources\prtflo-imgs2-1.jpg" />
+    <Content Include="assets\images\resources\prtflo-imgs2-2.jpg" />
+    <Content Include="assets\images\resources\prtflo-imgs2-3.jpg" />
+    <Content Include="assets\images\resources\prtflo-nv-img1-1.jpg" />
+    <Content Include="assets\images\resources\prtflo-nv-img1-2.jpg" />
+    <Content Include="assets\images\resources\prtflo-nv-img1-3.jpg" />
+    <Content Include="assets\images\resources\prtnr-img1.png" />
+    <Content Include="assets\images\resources\prtnr-img2.png" />
+    <Content Include="assets\images\resources\prtnr-img3.png" />
+    <Content Include="assets\images\resources\prtnr-img4.png" />
+    <Content Include="assets\images\resources\prtnr-img5.png" />
+    <Content Include="assets\images\resources\prtnr-img6.png" />
+    <Content Include="assets\images\resources\prtnr-img7.png" />
+    <Content Include="assets\images\resources\prtnr1.png" />
+    <Content Include="assets\images\resources\prtnr2-1.jpg" />
+    <Content Include="assets\images\resources\prtnr2-2.jpg" />
+    <Content Include="assets\images\resources\prtnr2-3.jpg" />
+    <Content Include="assets\images\resources\prtnr2-4.jpg" />
+    <Content Include="assets\images\resources\prtnr2.png" />
+    <Content Include="assets\images\resources\prtnr3-1.png" />
+    <Content Include="assets\images\resources\prtnr3-2.png" />
+    <Content Include="assets\images\resources\prtnr3-3.png" />
+    <Content Include="assets\images\resources\prtnr3-4.png" />
+    <Content Include="assets\images\resources\prtnr3-5.png" />
+    <Content Include="assets\images\resources\prtnr3-6.png" />
+    <Content Include="assets\images\resources\prtnr3.png" />
+    <Content Include="assets\images\resources\prtnr4.png" />
+    <Content Include="assets\images\resources\prtnr5.png" />
+    <Content Include="assets\images\resources\prtnr6.png" />
+    <Content Include="assets\images\resources\prtnr7.png" />
+    <Content Include="assets\images\resources\prtnr8.png" />
+    <Content Include="assets\images\resources\rltd-pst-img2-1.jpg" />
+    <Content Include="assets\images\resources\rltd-pst-img2-2.jpg" />
+    <Content Include="assets\images\resources\rltd-pst-img2-3.jpg" />
+    <Content Include="assets\images\resources\rltd-pst-img2-4.jpg" />
+    <Content Include="assets\images\resources\skl-mckp.png" />
+    <Content Include="assets\images\resources\sld1.jpg" />
+    <Content Include="assets\images\resources\sld2.jpg" />
+    <Content Include="assets\images\resources\sld3.jpg" />
+    <Content Include="assets\images\resources\sld4.jpg" />
+    <Content Include="assets\images\resources\sld5.jpg" />
+    <Content Include="assets\images\resources\sld6.jpg" />
+    <Content Include="assets\images\resources\sld7.jpg" />
+    <Content Include="assets\images\resources\sld8.jpg" />
+    <Content Include="assets\images\resources\sld9.jpg" />
+    <Content Include="assets\images\resources\smpl-img1.jpg" />
+    <Content Include="assets\images\resources\smpl-img2.jpg" />
+    <Content Include="assets\images\resources\smpl-img3.jpg" />
+    <Content Include="assets\images\resources\spncr1-1.png" />
+    <Content Include="assets\images\resources\spncr1-2.png" />
+    <Content Include="assets\images\resources\spncr1-3.png" />
+    <Content Include="assets\images\resources\spncr1-4.png" />
+    <Content Include="assets\images\resources\spncr1-5.png" />
+    <Content Include="assets\images\resources\spncr1-6.png" />
+    <Content Include="assets\images\resources\spncr1-7.png" />
+    <Content Include="assets\images\resources\spt-img1.jpg" />
+    <Content Include="assets\images\resources\spt-img2.jpg" />
+    <Content Include="assets\images\resources\spt-img3.jpg" />
+    <Content Include="assets\images\resources\srv-icn1-1.png" />
+    <Content Include="assets\images\resources\srv-icn1-2.png" />
+    <Content Include="assets\images\resources\srv-icn1-3.png" />
+    <Content Include="assets\images\resources\srv-icon1-1.png" />
+    <Content Include="assets\images\resources\srv-icon1-2.png" />
+    <Content Include="assets\images\resources\srv-icon1-3.png" />
+    <Content Include="assets\images\resources\srv-icon1-4.png" />
+    <Content Include="assets\images\resources\srv-icon1-5.png" />
+    <Content Include="assets\images\resources\srv-icon1-6.png" />
+    <Content Include="assets\images\resources\srv-img1.png" />
+    <Content Include="assets\images\resources\srv-img2.png" />
+    <Content Include="assets\images\resources\srv-img3.png" />
+    <Content Include="assets\images\resources\srv-img4.png" />
+    <Content Include="assets\images\resources\srv-img5.png" />
+    <Content Include="assets\images\resources\srv-img6.png" />
+    <Content Include="assets\images\resources\srv2-1.jpg" />
+    <Content Include="assets\images\resources\srv2-2.jpg" />
+    <Content Include="assets\images\resources\srv2-3.jpg" />
+    <Content Include="assets\images\resources\srv2-4.jpg" />
+    <Content Include="assets\images\resources\srv2-5.jpg" />
+    <Content Include="assets\images\resources\srv2-6.jpg" />
+    <Content Include="assets\images\resources\tem1-1.jpg" />
+    <Content Include="assets\images\resources\tem1-2.jpg" />
+    <Content Include="assets\images\resources\tem1-3.jpg" />
+    <Content Include="assets\images\resources\tem1-4.jpg" />
+    <Content Include="assets\images\resources\testi-bg1.jpg" />
+    <Content Include="assets\images\resources\testi-bg2.jpg" />
+    <Content Include="assets\images\resources\testi-bg3.jpg" />
+    <Content Include="assets\images\resources\testi-bg4.jpg" />
+    <Content Include="assets\images\resources\testi-img1-1.jpg" />
+    <Content Include="assets\images\resources\testi-img1-2.jpg" />
+    <Content Include="assets\images\resources\testi-img1-3.jpg" />
+    <Content Include="assets\images\resources\testi-img1-4.jpg" />
+    <Content Include="assets\images\resources\testi-img1-5.jpg" />
+    <Content Include="assets\images\resources\testi-img1-6.jpg" />
+    <Content Include="assets\images\resources\testi-img1-7.jpg" />
+    <Content Include="assets\images\resources\testi-img1.jpg" />
+    <Content Include="assets\images\resources\testi-img2-1.jpg" />
+    <Content Include="assets\images\resources\testi-img2-2.jpg" />
+    <Content Include="assets\images\resources\testi-img2-3.jpg" />
+    <Content Include="assets\images\resources\testi-img2.jpg" />
+    <Content Include="assets\images\resources\tm-2-1.jpg" />
+    <Content Include="assets\images\resources\tm-2-2.jpg" />
+    <Content Include="assets\images\resources\tm-2-3.jpg" />
+    <Content Include="assets\images\resources\tm-2-4.jpg" />
+    <Content Include="assets\images\resources\tm-2-5.jpg" />
+    <Content Include="assets\images\resources\tm1-1.jpg" />
+    <Content Include="assets\images\resources\tm1-2.jpg" />
+    <Content Include="assets\images\resources\tm1-3.jpg" />
+    <Content Include="assets\images\resources\tm1-4.jpg" />
+    <Content Include="assets\images\resources\tm1-5.jpg" />
+    <Content Include="assets\images\resources\tm1-6.jpg" />
+    <Content Include="assets\images\resources\tm2-1.jpg" />
+    <Content Include="assets\images\resources\tm2-2.jpg" />
+    <Content Include="assets\images\resources\tm2-3.jpg" />
+    <Content Include="assets\images\resources\tm2-4.jpg" />
+    <Content Include="assets\images\resources\tm2-5.jpg" />
+    <Content Include="assets\images\resources\tm2-6.jpg" />
+    <Content Include="assets\images\resources\tm3-1.jpg" />
+    <Content Include="assets\images\resources\tm3-2.jpg" />
+    <Content Include="assets\images\resources\tm3-3.jpg" />
+    <Content Include="assets\images\resources\tm3-4.jpg" />
+    <Content Include="assets\images\resources\tm3-5.jpg" />
+    <Content Include="assets\images\resources\tm3-6.jpg" />
+    <Content Include="assets\images\resources\tm3-7.jpg" />
+    <Content Include="assets\images\resources\tm3-8.jpg" />
+    <Content Include="assets\images\resources\vdo-pst-big-img1-1.jpg" />
+    <Content Include="assets\images\resources\vdo-pst-big-img1-2.jpg" />
+    <Content Include="assets\images\resources\vdo-pst-big-img1-3.jpg" />
+    <Content Include="assets\images\resources\vdo-pst-big-img1-4.jpg" />
+    <Content Include="assets\images\resources\vdo-pst-sml-img1-1.jpg" />
+    <Content Include="assets\images\resources\vdo-pst-sml-img1-2.jpg" />
+    <Content Include="assets\images\resources\vdo-pst-sml-img1-3.jpg" />
+    <Content Include="assets\images\resources\vdo-pst-sml-img1-4.jpg" />
+    <Content Include="assets\images\resources\why1-1.jpg" />
+    <Content Include="assets\images\resources\why1-2.jpg" />
+    <Content Include="assets\images\resources\why1-3.jpg" />
+    <Content Include="assets\images\resources\wlcm-img1-1.jpg" />
+    <Content Include="assets\images\resources\wlcm-img1-2.jpg" />
+    <Content Include="assets\images\resources\wlcm-img1-3.jpg" />
+    <Content Include="assets\images\resources\wrk-mckp.png" />
+    <Content Include="assets\images\tw-icn.png" />
+    <Content Include="assets\images\whiteboard\jim_smile.html" />
+    <Content Include="assets\images\whiteboard\transparent.png" />
+    <Content Include="assets\images\whiteboard\underline.png" />
+    <Content Include="assets\images\whiteboard\whiteboard_logo.png" />
+    <Content Include="assets\images\yt-icn.png" />
+    <Content Include="assets\scripts\bootstrap.min.js" />
+    <Content Include="assets\scripts\chrt-int1.js" />
+    <Content Include="assets\scripts\chrt-int2.js" />
+    <Content Include="assets\scripts\chrt-int3.js" />
+    <Content Include="assets\scripts\dounat-chrt-int.js" />
+    <Content Include="assets\scripts\exporting.js" />
+    <Content Include="assets\scripts\g-mp1.js" />
+    <Content Include="assets\scripts\g-mp2.js" />
+    <Content Include="assets\scripts\highcharts-more.js" />
+    <Content Include="assets\scripts\highcharts.js" />
+    <Content Include="assets\scripts\jquery.min.js" />
+    <Content Include="assets\scripts\main.js" />
+    <Content Include="assets\scripts\particle-int.js" />
+    <Content Include="assets\scripts\plugins.js" />
+    <Content Include="assets\scripts\revolution\addons\revolution.addon.particles.min.js" />
+    <Content Include="assets\scripts\revolution\addons\revolution.addon.polyfold.min.js" />
+    <Content Include="assets\scripts\revolution\addons\revolution.addon.slicey.min.js" />
+    <Content Include="assets\scripts\revolution\addons\revolution.addon.whiteboard.min.js" />
+    <Content Include="assets\scripts\revolution\extensions\revolution.extension.actions.min.js" />
+    <Content Include="assets\scripts\revolution\extensions\revolution.extension.carousel.min.js" />
+    <Content Include="assets\scripts\revolution\extensions\revolution.extension.kenburn.min.js" />
+    <Content Include="assets\scripts\revolution\extensions\revolution.extension.layeranimation.min.js" />
+    <Content Include="assets\scripts\revolution\extensions\revolution.extension.migration.min.js" />
+    <Content Include="assets\scripts\revolution\extensions\revolution.extension.navigation.min.js" />
+    <Content Include="assets\scripts\revolution\extensions\revolution.extension.parallax.min.js" />
+    <Content Include="assets\scripts\revolution\extensions\revolution.extension.slideanims.min.js" />
+    <Content Include="assets\scripts\revolution\extensions\revolution.extension.video.min.js" />
+    <Content Include="assets\scripts\revolution\jquery.themepunch.revolution.min.js" />
+    <Content Include="assets\scripts\revolution\jquery.themepunch.tools.min.js" />
+    <Content Include="assets\scripts\revolution\revolution.initialize.js" />
+    <Content Include="assets\scripts\revolution\revolution.initialize10.js" />
+    <Content Include="assets\scripts\revolution\revolution.initialize11.js" />
+    <Content Include="assets\scripts\revolution\revolution.initialize12.js" />
+    <Content Include="assets\scripts\revolution\revolution.initialize2.js" />
+    <Content Include="assets\scripts\revolution\revolution.initialize4.js" />
+    <Content Include="assets\scripts\revolution\revolution.initialize5.js" />
+    <Content Include="assets\scripts\revolution\revolution.initialize6.js" />
+    <Content Include="assets\scripts\revolution\revolution.initialize7.js" />
+    <Content Include="assets\scripts\revolution\revolution.initialize8.js" />
+    <Content Include="assets\scripts\revolution\revolution.initialize9.js" />
+    <Content Include="assets\scripts\snap.svg.js" />
+    <Content Include="assets\scripts\svg-donut-chart-framework.js" />
+    <Content Include="assets\stylesheets\assets\coloredbg.html" />
+    <Content Include="assets\stylesheets\assets\gridtile.html" />
+    <Content Include="assets\stylesheets\assets\gridtile_3x3.html" />
+    <Content Include="assets\stylesheets\assets\gridtile_3x3_white.html" />
+    <Content Include="assets\stylesheets\assets\gridtile_white.html" />
+    <Content Include="assets\stylesheets\assets\loader.html" />
+    <Content Include="assets\stylesheets\blue-color.css" />
+    <Content Include="assets\stylesheets\bootstrap.min.css" />
+    <Content Include="assets\stylesheets\chosen-sprite%402x.html" />
+    <Content Include="assets\stylesheets\chosen-sprite.html" />
+    <Content Include="assets\stylesheets\icons.min.css" />
+    <Content Include="assets\stylesheets\main.css" />
+    <Content Include="assets\stylesheets\owl.video.play.html" />
+    <Content Include="assets\stylesheets\plugins.css" />
+    <Content Include="assets\stylesheets\red-color.css" />
+    <Content Include="assets\stylesheets\responsive.css" />
+    <Content Include="assets\stylesheets\revolution\addons\revolution.addon.particles.css" />
+    <Content Include="assets\stylesheets\revolution\addons\revolution.addon.polyfold.css" />
+    <Content Include="assets\stylesheets\revolution\closedhand.html" />
+    <Content Include="assets\stylesheets\revolution\navigation.css" />
+    <Content Include="assets\stylesheets\revolution\openhand.html" />
+    <Content Include="assets\stylesheets\revolution\pe-icon-7-stroke\css\pe-icon-7-stroke.html" />
+    <Content Include="assets\stylesheets\revolution\settings.css" />
+    <Content Include="assets\stylesheets\yellow-color.css" />
+    <Content Include="index.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Enquiry.cs" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>27004</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:27004/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
